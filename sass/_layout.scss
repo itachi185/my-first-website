@@ -1,0 +1,107 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+////////////////////////////////////
+// MEDIA QUERIES
+@media only screen and (max-width: 61.9375em) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 3rem 2rem;
+  }
+
+  .home #next-slide,
+  .home #prev-slide {
+    transform: translateY(0);
+    top: 88%;
+  }
+
+  .home #prev-slide {
+    left: auto;
+    right: 8rem;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  #menu-btn {
+    display: inline-block;
+  }
+
+  .header {
+    .search-form {
+      width: 100%;
+      right: 0;
+      border-radius: 0;
+
+      &.active {
+        top: 99%;
+        border-top: $border;
+        border-bottom: $border;
+      }
+    }
+
+    .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background-color: $white;
+      border-top: $border;
+      border-bottom: $border;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background-color: $light-bg;
+        font-size: 2rem;
+        display: block;
+        border-radius: 0.5rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .slides-container .slide .content h3 {
+    font-size: 5rem;
+  }
+
+  .contact .row form .input-box input {
+    width: 100%;
+  }
+}

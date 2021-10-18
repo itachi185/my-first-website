@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+.heading {
+  background: url(../image/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+
+  h1 {
+    color: $black;
+    font-size: 4rem;
+  }
+
+  p {
+    padding-top: 1rem;
+    font-size: 2rem;
+    color: $light-color;
+
+    a {
+      color: $black;
+      padding-right: 0.5rem;
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+  border-bottom: $border;
+  color: $black;
+
+  span {
+    color: $green;
+    padding-left: 0.7rem;
+  }
+
+  a {
+    margin-left: auto;
+    color: $light-color;
+    font-size: 1.5rem;
+
+    &:hover {
+      color: $green;
+    }
+  }
+}
